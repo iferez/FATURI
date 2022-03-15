@@ -1,0 +1,87 @@
+@import "headerFooterMenu.css";
+@import "banner.css";
+@import "botones.css";
+
+.background-gris {
+  background-color: #f5f5f5 !important;
+}
+
+#collapseFiltro input {
+  border: 1px solid #d0d0d0;
+  background-color: #ffff;
+  color: #d0d0d0;
+  padding: 10px;
+  margin-top: 20px !important;
+  margin-right: 20px !important;
+  border-radius: 6px;
+  width: 100%;
+}
+
+#collapseFiltro input {
+  border: 1px solid #d0d0d0;
+  background-color: #ffff;
+  color: #d0d0d0;
+  padding: 10px;
+  margin-top: 20px !important;
+  margin-right: 20px !important;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.btn-solicitud {
+  background-color: #0072bb !important;
+  font-size: 16px !important;
+  color: #ffff !important;
+  padding: 5px 20px !important;
+}
+
+.btn-search {
+  background: #d6d6d6 !important;
+  z-index: 0 !important;
+}
+
+.fa-sort-amount-down-alt {
+  color: #999999;
+}
+
+.fa-pencil-alt {
+  color: #1072bb;
+}
+
+.fa-toggle-on {
+  color: #33b560;
+}
+
+.fa-toggle-off {
+  color: #c6c6c6;
+}
+
+.form-switch .form-check-input {
+  cursor: pointer;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: #33b560 !important;
+  border-color: #2e7d33;
+}
+
+.fa-trash-alt {
+  color: #c62828 !important;
+  font-size: 18px;
+}
+
+table i {
+  cursor: pointer;
+}
+
+th,
+td {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+@media (min-width: 760px) {
+  #collapseFiltro input {
+    width: 230px;
+  }
+}

@@ -1,0 +1,243 @@
+@import "headerFooterMenu.css";
+
+.container-main {
+  width: 100%;
+  margin: auto;
+  background: #ffff;
+}
+
+.portal h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffff;
+}
+
+.portal h1 span {
+  font-weight: lighter;
+}
+
+.bg-cargaMasiva{
+    background-color: #F2F2F2;
+}
+
+
+
+.cargaMasiva{
+
+    padding: 0px 20px 20px 20px;
+    margin: auto;
+}
+
+.cargaMasiva h2 {
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.cargaMasiva h3 {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.cargaMasiva h4 {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+label {
+  color: #707070;
+  font-weight: bold;
+  margin-bottom: 10px !important;
+}
+
+.inputFile{
+    max-width: 600px;
+}
+
+
+
+.cargaMasiva a {
+  color: #1072bb;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cargaMasiva p {
+  color: #707070;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.errorP {
+  font-weight: 300 !important;
+}
+
+.fa-exclamation-triangle {
+  color: #f9a829 !important;
+}
+
+.fa-trash-alt {
+  color: #c62828 !important;
+}
+
+
+
+#fechaCarga {
+  width: 200px;
+  background-color: #d0d0d0;
+}
+
+.btn-success {
+  background-color: #2e7d33;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  transition: 0.3s;
+}
+
+.btn-success:hover {
+  background-color: #276b2c;
+}
+
+.btn-info {
+  background-color: #f2f2f2;
+  border: 1px solid #37bbed;
+  font-weight: bold;
+  color: #37bbed;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+.btn-info:hover {
+  background-color: #37bbed;
+  color: #ffff;
+}
+
+.modal-title{
+    font-weight: bold;
+}
+.modal-header{
+    background-color: #F2F2F2;
+}
+.modal-body{
+    padding: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 414px) {
+  .faturiDgtic {
+    display: block;
+    font-size: 18px;
+    color: #ffff;
+    font-weight: bold;
+    margin-top: 36px !important;
+    padding-left: 40px !important;
+  }
+}
+
+@media (min-width: 760px) {
+  .cargaMasiva h2 {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .faturiDgtic {
+    display: block;
+    font-size: 32px;
+    color: #ffff;
+    font-weight: bold;
+    margin-top: 36px !important;
+    padding-left: 180px !important;
+  }
+
+  .cargaMasiva{
+    padding-bottom: 80px;
+}
+
+  .cargaMasiva h2 {
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .cargaMasiva h3 {
+    font-size: 32px;
+  }
+
+  .cargaMasiva h4 {
+    font-size: 24px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .cargaMasiva a {
+    font-size: 18px;
+  }
+
+  .cargaMasiva p {
+    font-size: 22px;
+  }
+
+  .botonesCarga{
+      padding-top: 80px !important;
+  }
+
+  .btn-success {
+    font-size: 20px;
+    padding: 12px 40px;
+  }
+
+  .btn-info {
+    font-size: 20px;
+    padding: 12px 40px;
+  }
+
+  .fa-exclamation-triangle {
+    font-size: 20px !important;
+    padding-right: 10px;
+  }
+  
+  .fa-question-circle {
+    font-size: 20px !important;
+    padding-right: 16px !important;
+  }
+
+  .fa-trash-alt{
+      font-size: 20px !important;
+      padding: 0px 5px;
+  }
+
+  .modal-title{
+    font-size: 26px;
+}
+.modal-header{
+    padding: 20px 46px;
+
+}
+.modal-body{
+    padding: 50px;
+    font-size: 22px;
+}
+}
+
+@media (min-width: 1200px) {
+  .logoHeader {
+    margin-right: 0px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}

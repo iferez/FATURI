@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/formulario.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <!-- ALERT SUCCESS -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+    </symbol>
+  </svg>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="js/function.js"></script>
+
+  <title>Formulario de Alta</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="row" id="header-ministerio-desarrollo">
+      <div class="col-8 col-sm-4 d-flex justify-content-center">
+        <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+      </div>
+      <div class="col-4 offset-sm-4 col-sm-4 d-flex justify-content-center">
+        <nav>
+
+
+          <label for="btnCuenta" class="button miCuenta"> <i class="fas fa-user"></i>
+            <div class="d-none d-lg-inline cuentaNombre">Joaquín Pérez</div>
+            <span class="fas fa-caret-down"></span>
+          </label>
+
+          <input type="checkbox" id="btnCuenta">
+
+          <ul class="menu">
+            <li class="borderInicio fw-bold" id="tipoUsuarioMenu"><a href="#">Usuario Cargador</a></li>
+            <li id="altaMenu"><a href="#"> Alta ingresante</a></li>
+            <li id="historialMenu"><a href="#">Historial</a></li>
+
+            <li>
+              <hr>
+            </li>
+            <li class="borderFin" id="cerrarMenu"><a href="#">Cerrar la sesión</a></li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main-bg">
+    <section>
+      <div class="banner">
+        <img src="img/bannerResponsive.png" class="img-fluid d-xl-none" alt="Banner FATURI" />
+        <img src="img/banner.png" class="img-fluid d-none d-xl-block" alt="Banner FATURI" />
+        <h1>
+          FATURI <br />
+          <span class="banner-h2"> DGTIC </span>
+        </h1>
+      </div>
+    </section>
+
+    <div class="container py-5">
+
+      <form autocomplete="off">
+
+
+        <!-- DATOS PERSONALES -->
+        <fieldset>
+
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+              <h2 class="fw-bold fs-2 mt-lg-5 mb-5"> Completa el formulario Alta de Ingresante </h2>
+
+              <h3 class="my-4 fw-bold fs-4">Datos del Ingresante</h3>
+
+
+              <div class="form-group item-form">
+                <label for="nombre">Nombre/s</label>
+                <input type="text" name="nombreForm" class="form-control" id="nombre" required=""
+                  aria-required="true" />
+                <p class="help-block error visually-hidden" role="alert">
+                  Ingresá tu nombre
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="apellido">Apellido/s</label>
+                <input type="text" name="apellidoForm" class="form-control" id="apellido" required=""
+                  aria-required="true" />
+                <p class="help-block error visually-hidden">
+                  Ingresá tu apellido
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="cuil-cuit">CUIL / CUIT</label>
+                <input type="text" name="cuilCuitForm" class="form-control" id="cuil-cuit" required=""
+                  aria-required="true" />
+                <p class="help-block error visually-hidden">
+                  La persona con el número de CUIL/CUIT ingresado ya existe en
+                  el Sistema. Por favor, verificar.
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="rolForm">Rol</label>
+                <input type="text" name="rolForm" class="form-control" id="rolForm" required=""
+                  aria-required="true" />
+                <p class="help-block error visually-hidden">
+                  Ingresá un Rol
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="email">E-Mail</label>
+                <input type="email" name="emailForm" class="form-control" id="email" required="" aria-required="true" />
+                <p class="help-block error visually-hidden">
+                  Ingresá un correo electrónico <br />
+                  El correo electrónico tiene un formato no válido
+                </p>
+              </div>
+
+
+              <div class="form-group item-form">
+                <label for="dependenciaForm">Dependencia</label>
+                <select name="dependenciaForm" id="dependenciaForm" class="form-control">
+                  <option value="">Seleccione</option>
+                  <option value="1">xxxxx</option>
+                  <option value="2">xxxxxx</option>
+                  <option value="3">xxxxxxx</option>
+                  <option value="4">xxxxxxxx</option>
+                  <option value="5">xxxxx</option>
+                </select>
+                <p class="help-block error visually-hidden">
+                  Ingresá el una opción valida
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="modalidad">Modalidad de vinculación</label>
+                <select name="modalidadForm" id="modalidad" class="form-control">
+                  <option value="">Seleccione</option>
+                  <option value="1">Asistencia Técnica</option>
+                  <option value="2">Decreto 1109/07</option>
+                  <option value="3">Ley Marco (25.164)</option>
+                  <option value="4">Planta Permanente</option>
+                  <option value="5">Planta Transitoria</option>
+                </select>
+                <p class="help-block error visually-hidden">
+                  Ingresá el una opción valida
+                </p>
+              </div>
+
+
+              <div class="form-group item-form">
+                <label for="opcion-externo">¿Es agente externo?</label>
+                <div class="d-flex">
+                  <div class="radio me-4">
+                    <label for="opcion1-externo">
+                      <input type="radio" name="opcion1-externo" id="opcion1-externo" value="opcion1-externo" required=""
+                        aria-required="true" />
+                      Si
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label for="opcion-externo">
+                      <input type="radio" name="opcion2-externo" id="opcion2-externo" value="opcion2-externo" required=""
+                        aria-required="true" />
+                      No
+                    </label>
+                  </div>
+                  <p class="help-block error visually-hidden">
+                    Selecciona una opción
+                  </p>
+                </div>
+              </div>
+
+
+
+              <div class="form-group item-form">
+                <label for="expediente">Expediente electrónico</label>
+                <input type="text" name="expediente" class="form-control" id="expediente" required="" aria-required="true" />
+                <p class="help-block error visually-hidden">
+                  Ingresá un Expediente electrónico válido
+                </p>
+              </div>
+
+
+              <div class="form-group item-form">
+                <label for="fecha">Fecha de baja</label>
+                <input type="date" class="form-control" id="fecha" required="" aria-required="true" />
+                <p class="help-block error visually-hidden">
+                  Ingresá una fecha válida
+                </p>
+              </div>
+
+
+              <h3 class="mb-4 mt-5 fw-bold fs-4">Ubicación</h3>
+
+
+              <div class="form-group item-form">
+                <label for="direccion">Dirección</label>
+                <select name="direccionForm" id="direccion" class="form-control">
+                  <option value="">Seleccione</option>
+                  <option value="1">Av. Hipólito Yrigoyen 250</option>
+                  <option value="2">Av. Paseo Colón 171</option>
+                  <option value="3">Av. Paseo Colón 189</option>
+                  <option value="4">Av. Paseo Colón 275</option>
+                  <option value="5">Av. Presidente Julio A. Roca 651</option>
+                  <option value="6">Av. Presidente Roque Sáenz Peña 555</option>
+                  <option value="6">Balcarce 186</option>
+                  <option value="6">Otra5</option>
+                </select>
+                <p class="help-block error visually-hidden">
+                  Selecciona una opción valida
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="otra">Otra</label>
+                <input type="text" name="otraForm" class="form-control" id="otra" required="" aria-required="false" />
+                <p class="help-block error visually-hidden">
+                  Selecciona una opción valida
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="piso">Piso</label>
+                <input type="text" name="pisoForm" class="form-control" id="piso" required="" aria-required="false" />
+                <p class="help-block error visually-hidden">
+                  Selecciona una opción valida
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="oficina">Oficina</label>
+                <input type="text" name="oficinaForm" class="form-control" id="oficina" required=""
+                  aria-required="false" />
+                <p class="help-block error visually-hidden">
+                  Selecciona una opción valida
+                </p>
+
+              </div>
+
+              <div class="form-group item-form">
+                <label for="interno">Interno</label>
+                <input type="text" name="internoForm" class="form-control" id="interno" required=""
+                  aria-required="false" />
+                <p class="help-block error visually-hidden">
+                  Selecciona una opción valida
+                </p>
+              </div>
+
+              <div class="form-group item-form">
+                <label for="opcion1-alt">¿Posee actualmente accseso a los sistemas
+                  informáticos?</label>
+                <div class="d-flex">
+                  <div class="radio me-4">
+                    <label for="opcion1-alt">
+                      <input type="radio" name="opciones-alt" id="opcion1-alt" value="opcion1-alt" required=""
+                        aria-required="true" />
+                      Si
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label for="opcion2-alt">
+                      <input type="radio" name="opciones-alt" id="opcion2-alt" value="opcion2-alt" required=""
+                        aria-required="true" />
+                      No
+                    </label>
+                  </div>
+                  <p class="help-block error visually-hidden">
+                    Selecciona una opción
+                  </p>
+                </div>
+              </div>
+
+
+
+
+              <div class="row py-5">
+
+                <div class="col-sm-6">
+                  <a href="" class="btn btn-secondary my-3 my-sm-0 px-4 py-2 rounded-pill">Cancelar</a>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-md-end">
+                  <a href="" class="btn btn-success m-l-1 ms-sm-5 px-4 py-2 rounded-pill">Enviar solicitud</a>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </fieldset>
+      </form>
+
+      <!-- MODAL BOTON -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        MODAL > PASAR A BTN FORM
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"><i class="fas fa-check-circle"></i> El alta fue ingresada con éxito</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ¿ Estás seguro de que deseas aceptar el alta de usuario ingresada?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-cancelarModal rounded-pill" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-confirmarModal rounded-pill">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="info-footer">
+    <div class="container-fluid" id="footer-ministerioDesarrollo">
+      <div class="row">
+        <div class="col-sm-3 text-sm-center">
+          <img src="img/logoMinisterioBlanco.svg" alt="Logo Ministerio" />
+        </div>
+        <div class="info-footer offset-sm-5 col-sm-4">
+          <div class="terminos-footer">
+            <a href="" class="text-decoration-none text-light">
+              <p>Acerca de este sitio</p>
+            </a>
+            <a href="" class="text-decoration-none text-light">
+              <p>Términos y condiciones</p>
+            </a>
+            <a href="" class="text-decoration-none text-light">
+              <p>Ministerio</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

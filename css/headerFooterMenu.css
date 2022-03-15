@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&display=swap");
+
+* {
+  font-family: "Encode Sans", sans-serif;
+}
+
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+header img,
+footer img {
+  max-height: 66.4px;
+}
+
+/* HEADER */
+
+#header-ministerio-desarrollo {
+  height: 106px;
+  background: #37bbed;
+  box-shadow: 0px 1px 5px 2px #00000023 !important;
+  z-index: 1;
+}
+
+.logoHeader {
+  margin-top: 20px;
+}
+
+.miCuenta {
+  margin-top: 24px;
+}
+
+#footer-ministerioDesarrollo {
+  height: 202;
+  background: #37bbed;
+  z-index: 1;
+}
+
+#footer-ministerioDesarrollo p{
+margin-left: 10px;
+}
+
+/* HEADER MENU */
+
+.fa-user{
+  font-size: 20px;
+}
+
+nav {
+  width: 200px;
+  line-height: 40px;
+  padding: 8px 25px;
+  /*border-radius: 5px;*/
+  z-index: 1;
+}
+
+nav label {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+
+.button span {
+  line-height: 40px;
+  transition: 0.5s;
+}
+
+.button span.rotate {
+  transform: rotate(-180deg);
+}
+
+ul hr {
+  width: 100px;
+  margin: auto;
+}
+
+nav ul {
+  position: absolute;
+  background: #ffff;
+  list-style: none;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+  /*border-radius: 5px;*/
+  display: none;
+}
+
+[id^="btnCuenta"]:checked + ul {
+  display: block;
+  padding-left: 0;
+}
+
+nav ul li {
+  line-height: 40px;
+  padding-top: 8px;
+  /*padding-right: 30px;*/
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffff;
+  border-bottom: 1px solid #ffff(0, 0, 0, 0.2);
+}
+nav ul li label {
+  font-size: 18px;
+}
+nav ul li a {
+  color: #333333;
+  background-color: #ffff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+nav ul li a:hover,
+nav ul li label:hover {
+  color: #979797;
+}
+nav ul ul {
+  position: static;
+}
+nav ul ul li {
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+}
+nav ul ul li a {
+  color: #e6e6e6;
+  font-size: 17px;
+}
+nav ul li span {
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 10px;
+  transition: 0.5s;
+}
+nav ul li span.rotate {
+  transform: rotate(-180deg);
+}
+
+#btnCuenta {
+  display: none;
+}
+
+.checkMenu {
+  color: #2e7d33;
+  padding-right: 4px;
+}
+
+.pencilMenu {
+  color: #0072bb;
+  padding-left: 20px;
+}
+
+/* FOOTER */
+
+.info-footer img {
+  margin-top: 75px;
+  margin-left: 10px;
+}
+
+.terminos-footer {
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 575px) {
+  #footer-ministerioDesarrollo {
+    height: 202px;
+  }
+
+  #footer-ministerioDesarrollo p{
+    margin-left: 0px;
+    }
+
+  .terminos-footer {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    padding-top: 140px;
+  }
+}
+
+@media (min-width: 991px) {
+  .logoHeader {
+    margin-right: 80px;
+  }
+
+  .fa-caret-down {
+    margin-top: 4px;
+  }
+
+  nav {
+    position: absolute;
+    width: 300px;
+    word-break: break-all;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  nav ul {
+    padding-left: 0px;
+  }
+
+  nav label {
+    color: #ffff;
+    font-size: 22px;
+  }
+
+  .button span {
+    float: right;
+  }
+
+  nav ul {
+    top: 90px;
+    height: 0px;
+    padding-top: 0px;
+  }
+
+  nav ul li {
+    padding: 0px 20px;
+    text-align: start;
+  }
+
+  ul hr {
+    width: 100%;
+    margin: auto;
+  }
+
+  .cuentaNombre {
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 40px;
+    font-size: 22px !important;
+  }
+
+  .iconoHeader {
+    margin-bottom: 8px;
+  }
+
+  nav li a {
+    font-size: 16px !important;
+  }
+
+
+  nav li {
+    border-right: 1px solid #3333332f;
+    border-left: 1px solid #3333332f;
+  }
+
+  .borderInicio {
+    border-top: 1px solid #3333332f;
+  }
+
+  .borderFin {
+    padding: 10px 20px;
+    border-bottom: 1px solid #3333332f;
+  }
+
+  #nombreMenu {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  #mailMenu {
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .banner h1 {
+    font-size: 4.25rem;
+  }
+}
+
+@media (min-width: 1400px) {
+}

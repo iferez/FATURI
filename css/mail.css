@@ -1,0 +1,59 @@
+@import "headerFooter.css";
+
+.bg-gris {
+  background-color: #e1e1e16b !important;
+}
+
+.btn-mailOk {
+  letter-spacing: 1px !important;
+  font-size: 18px !important;
+  background: #2f7d33 !important;
+  color: #ffff !important;
+  padding: 10px 30px !important;
+}
+
+.btn-mailOk:hover {
+  background: #296e2e !important;
+}
+
+.check-i {
+  color: #2e7d33 !important;
+  margin-right: 14px !important;
+}
+
+.mailEstado h3 {
+  color: #707070;
+}
+
+.mailEstado a {
+  color: #0072bb !important;
+  text-decoration: none !important;
+}
+
+/* RECHAZO */
+
+.exclamIcon{
+  color: #FFA834 !important;
+  margin-right: 20px !important;
+}
+
+.mailEstado p{
+  font-size: 18px;
+}
+
+.sitioNav{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media (min-width: 990px) {
+  .mail {
+    padding: 50px 100px !important;
+  }
+
+  .btn-mailOk {
+    font-size: 22px !important;
+    padding: 15px 40px !important;
+  }
+}

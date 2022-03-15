@@ -1,0 +1,115 @@
+@import "headerFooterMenu.css";
+@import "banner.css";
+@import "botones.css";
+
+label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.main-bg {
+  background-color: #f5f5f5;
+}
+
+label {
+  color: #707070;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.btn-search {
+  background: #d6d6d6 !important;
+}
+
+.fa-check-circle {
+  color: #2e7d33;
+  font-size: 18px;
+  padding-right: 6px;
+}
+
+.fa-question-circle {
+  color: #0695d5;
+  font-size: 18px;
+  padding-right: 6px;
+}
+
+/*MODAL*/
+
+.modal-header {
+  border: none !important;
+}
+
+.modal-footer {
+  border: none !important;
+}
+
+.btn-cancelarModal {
+  color: #333333 !important;
+  letter-spacing: 1px !important;
+  background-color: #dddddd !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+  margin-right: 40px !important;
+}
+
+.btn-confirmarModal {
+  color: #ffff !important;
+  letter-spacing: 1px !important;
+  background-color: #2e7d33 !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+}
+
+/*ALERTA RECHAZO*/
+
+.alert-warning {
+  color: #333333 !important;
+  background-color: #ffa8340f !important;
+}
+
+@media (min-width: 1024px) {
+  .btn-cancelarModal {
+    font-size: 18px !important;
+    padding: 10px 25px !important;
+  }
+
+  .btn-confirmarModal {
+    font-size: 18px !important;
+    padding: 10px 25px !important;
+  }
+
+  .fa-check-circle {
+    font-size: 30px;
+  }
+
+  .fa-question-circle {
+    font-size: 30px;
+  }
+
+  .modal-content {
+    border-radius: 20px !important;
+  }
+
+  .btn-close {
+    margin-right: 20px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .modal-title {
+    padding: 80px 40px 0px 40px !important;
+    font-size: 32px !important;
+    font-weight: bold !important;
+  }
+
+  .modal-body {
+    font-size: 22px !important;
+    padding: 20px 40px !important;
+  }
+
+  .modal-footer {
+    font-size: 22px !important;
+    padding: 40px !important;
+  }
+}

@@ -1,0 +1,228 @@
+@import "headerFooterMenu.css";
+@import "botones.css";
+
+.bienvenida {
+  padding-top: 60px;
+}
+
+.bienvenida h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.bienvenida h3 {
+  font-size: 28px;
+}
+
+.bienvenida p {
+  font-size: 18px;
+}
+
+/*    CONTENIDO   */
+
+.sombra {
+  box-shadow: 0px 2px 6px 2px #0000001a;
+}
+
+.li-style li {
+  color: #2cb9ee;
+  font-size: 18px;
+}
+
+#img-ingreso {
+  width: 90px;
+}
+
+.indexImg {
+  z-index: 0;
+}
+
+.indexImg img {
+  width: 80px;
+}
+
+.info-registros h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.info-registros p {
+  font-size: 18px;
+}
+
+.info-registros ul,
+li {
+  font-size: 18px;
+}
+
+.numeracion-lista {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+  color: #ffff;
+  background: #2cb9ee;
+  margin-right: 15px;
+}
+
+.info-registros h5 {
+  font-size: 20px;
+  color: #0072bb;
+}
+
+.info-registros td {
+  font-size: 18px;
+}
+
+.btn-search {
+  background: #d6d6d6 !important;
+}
+
+#modalidad {
+  font-size: 16px;
+  padding: 0px 10px 1px 10px;
+  margin: 0;
+  width: 160px;
+}
+
+#collapseFiltro input {
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  background-color: #ffff;
+  color: #d0d0d0;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px !important;
+  margin-right: 20px !important;
+}
+
+/*  TABLA CSS  */
+
+table {
+  border-spacing: 0px 10px !important;
+  border-collapse: separate !important;
+}
+
+td {
+  text-align: center;
+  padding-top: 20px !important;
+  border-top: 1px solid #e1e1e1 !important;
+  border-bottom: 1px solid #e1e1e1 !important;
+}
+
+.numeracion {
+  background: #2cb9ee !important;
+  text-align: center;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  color: #ffff !important;
+  width: 60px !important;
+  padding-top: 10px !important;
+  padding-bottom: 5px !important;
+  border: 1px solid #e1e1e1;
+}
+
+.numeracionDos {
+  text-align: center;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  color: #ffff !important;
+  width: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border: 1px solid #e1e1e1;
+}
+
+.borde-right {
+  border-right: 1px solid #e1e1e1 !important;
+}
+
+.alert-success {
+  background-color: #f2faf3 !important;
+  color: #333333 !important;
+}
+
+.btn-solicitud{
+  background-color: #0072BB !important;
+  font-size: 16px !important;
+  color: #ffff !important;
+  padding: 5px 20px !important;
+}
+
+.amarilloTd{
+  background-color: #F9A822 !important;
+}
+.verdeTd{
+  background-color: #2E7D33 !important;
+}
+.rojoTd{
+  background-color:#C62828 !important;
+}
+
+/*   RESPONSIVE   */
+
+@media (min-width: 760px) {
+  .bienvenida h1 {
+    font-size: 44px;
+  }
+
+  .bienvenida h3 {
+    font-size: 38px;
+  }
+
+  .bienvenida p {
+    font-size: 22px;
+  }
+
+  .li-style li {
+    font-size: 18px;
+  }
+
+  .info-registros h4 {
+    font-size: 32px;
+  }
+
+  .info-registros p {
+    font-size: 24px;
+  }
+
+  .info-registros ul,
+  li {
+    font-size: 20px;
+  }
+
+  .info-registros h5 {
+    font-size: 22px;
+  }
+
+  .numeracion {
+    font-size: 26px !important;
+  }
+  .numeracionDos {
+    font-size: 26px !important;
+  }
+}
+
+@media (min-width: 996px) {
+  .indexImg img {
+    width: 111px;
+  }
+  h2 {
+    font-size: 5px !important;
+  }
+}
+
+@media (max-width: 996px) {
+  td {
+    display: flex !important;
+  }
+
+  .numeracion {
+    width: 100% !important;
+  }
+  .numeracionDos {
+    width: 100% !important;
+  }
+}

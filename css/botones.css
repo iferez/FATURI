@@ -1,0 +1,79 @@
+.btn-primary {
+  background-color: #0072bb !important;
+  font-weight: bold;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  padding: 8px 25px !important;
+}
+.btn-secondary{
+  background: #DDDDDD;
+  font-weight: bold;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  padding: 8px 25px !important;
+}
+
+.btn-success {
+  background: #2e7d33;
+  font-weight: bold;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  padding: 8px 25px !important;
+}
+
+.btn-warning {
+  background-color: #f9a822 !important;
+  font-weight: bold;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  padding: 8px 25px !important;
+}
+
+.btn-danger {
+  background-color: #be2626 !important;
+  font-weight: bold;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  padding: 8px 25px !important;
+}
+
+.btn-light {
+  font-weight: bold;
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  padding: 8px 25px !important;
+}
+
+@media (min-width: 1024px) {
+
+  
+  .btn-primary {
+    font-size: 18px !important;
+    padding: 10px 30px !important;
+  }
+
+  .btn-secondary {
+    font-size: 18px !important;
+    padding: 10px 30px !important;
+  }
+
+  .btn-success {
+    font-size: 18px !important;
+    padding: 10px 30px !important;
+  }
+
+  .btn-warning {
+    font-size: 18px !important;
+    padding: 10px 30px !important;
+  }
+
+  .btn-danger {
+    font-size: 18px !important;
+    padding: 10px 30px !important;
+  }
+
+  .btn-light {
+    font-size: 18px !important;
+    padding: 10px 30px !important;
+  }
+}

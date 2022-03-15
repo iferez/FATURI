@@ -1,0 +1,59 @@
+@import "headerFooter.css";
+@import "banner.css";
+@import "botones.css";
+ 
+
+/* CONTENIDO */
+
+.info {
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.info h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+label {
+  color: #707070 !important;
+  font-size: 18px !important;
+}
+
+.informatica {
+  color: #1072bb !important;
+  font-weight: bold;
+}
+
+@media (min-width: 575px) {
+  .info h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 760px) {
+  .info {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .info h2 {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .info {
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  .info h2 {
+    padding-top: 20px;
+  }
+
+  .informatica {
+    font-size: 18px !important;
+  }
+}
