@@ -212,7 +212,7 @@ td {
 }
 
 @media (max-width: 996px) {
-  td {
+  .tablaRespStyle td {
     display: flex !important;
   }
 
