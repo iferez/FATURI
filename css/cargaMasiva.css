@@ -1,11 +1,5 @@
 @import "headerFooterMenu.css";
 
-.container-main {
-  width: 100%;
-  margin: auto;
-  background: #ffff;
-}
-
 .portal h1 {
   font-size: 32px;
   font-weight: bold;
@@ -16,16 +10,13 @@
   font-weight: lighter;
 }
 
-.bg-cargaMasiva{
-    background-color: #F2F2F2;
+.bg-cargaMasiva {
+  background-color: #f2f2f2;
 }
 
-
-
-.cargaMasiva{
-
-    padding: 0px 20px 20px 20px;
-    margin: auto;
+.cargaMasiva {
+  padding: 0px 20px 20px 20px;
+  margin: auto;
 }
 
 .cargaMasiva h2 {
@@ -46,17 +37,15 @@
   padding-bottom: 30px;
 }
 
-label {
+.cargaMasiva label {
   color: #707070;
   font-weight: bold;
   margin-bottom: 10px !important;
 }
 
-.inputFile{
-    max-width: 600px;
+.inputFile {
+  max-width: 600px;
 }
-
-
 
 .cargaMasiva a {
   color: #1072bb;
@@ -83,50 +72,19 @@ label {
   color: #c62828 !important;
 }
 
-
-
 #fechaCarga {
   width: 200px;
   background-color: #d0d0d0;
 }
 
-.btn-success {
-  background-color: #2e7d33;
-  font-size: 16px;
+.modal-title {
   font-weight: bold;
-  letter-spacing: 1px;
-  padding: 10px 30px;
-  transition: 0.3s;
 }
-
-.btn-success:hover {
-  background-color: #276b2c;
-}
-
-.btn-info {
+.modal-header {
   background-color: #f2f2f2;
-  border: 1px solid #37bbed;
-  font-weight: bold;
-  color: #37bbed;
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding: 10px 30px;
-  transition: 0.5s;
 }
-
-.btn-info:hover {
-  background-color: #37bbed;
-  color: #ffff;
-}
-
-.modal-title{
-    font-weight: bold;
-}
-.modal-header{
-    background-color: #F2F2F2;
-}
-.modal-body{
-    padding: 40px;
+.modal-body {
+  padding: 40px;
 }
 
 /* RESPONSIVE */
@@ -158,9 +116,9 @@ label {
     padding-left: 180px !important;
   }
 
-  .cargaMasiva{
+  .cargaMasiva {
     padding-bottom: 80px;
-}
+  }
 
   .cargaMasiva h2 {
     font-size: 40px;
@@ -176,7 +134,7 @@ label {
     font-size: 24px;
   }
 
-  label {
+  .cargaMasiva label {
     font-size: 18px;
   }
 
@@ -188,13 +146,8 @@ label {
     font-size: 22px;
   }
 
-  .botonesCarga{
-      padding-top: 80px !important;
-  }
-
-  .btn-success {
-    font-size: 20px;
-    padding: 12px 40px;
+  .botonesCarga {
+    padding-top: 80px !important;
   }
 
   .btn-info {
@@ -206,38 +159,31 @@ label {
     font-size: 20px !important;
     padding-right: 10px;
   }
-  
+
   .fa-question-circle {
     font-size: 20px !important;
     padding-right: 16px !important;
   }
 
-  .fa-trash-alt{
-      font-size: 20px !important;
-      padding: 0px 5px;
+  .fa-trash-alt {
+    font-size: 20px !important;
+    padding: 0px 5px;
   }
 
-  .modal-title{
+  .modal-title {
     font-size: 26px;
-}
-.modal-header{
+  }
+  .modal-header {
     padding: 20px 46px;
-
-}
-.modal-body{
+  }
+  .modal-body {
     padding: 50px;
     font-size: 22px;
-}
+  }
 }
 
 @media (min-width: 1200px) {
   .logoHeader {
     margin-right: 0px !important;
-  }
-}
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1500px;
   }
 }

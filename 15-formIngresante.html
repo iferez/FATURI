@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/formIngresante.css" />
+    <link rel="stylesheet" href="css/master.css" />
 
     <link
       rel="stylesheet"
@@ -42,22 +42,25 @@
 
   <body>
     <header>
-        <nav class="container-fluid" id="header-ministerioDesarrollo">
-          <div class="row">
-            <div class="col-6 col-lg-4 ps-3 text-sm-center">
-              <img src="img/logoMinisterioBlanco.svg" alt="Logo Ministerio" />
-            </div>
-            <div class="col-6 col-lg-8 faturiDgtic">
-              <p>FATURI - DGTIC</p>
-            </div>
-          </div>
-        </nav>
-      </header>
+
+      <div class="row" id="header-ministerio-desarrollo">
+        <div class="col-8 col-sm-4 d-flex justify-content-center">
+          <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+        </div>
+
+        <div class="col-6 col-lg-8 faturiDgtic">
+          <p>FATURI - DGTIC</p>
+        </div>
+      </div>
+  
+    </header>
+
+
 
     <main class="main-bg">
     
 
-      <div class="container py-5">
+      <div class="container ingresanteCont py-5">
 
         <form autocomplete="off">
 
@@ -66,7 +69,7 @@
         
         
               <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
+                <div class="col-md-6 mt-md-5 pt-md-5">
                   <h2 class="fw-bold fs-1 mt-lg-5 mb-5">Formulario términos y condiciones</h2>
     
                   <h3 class="mb-4 fw-bold fs-4">Datos personales del ingresante</h3>

@@ -16,20 +16,20 @@
     text-align: center;
     color: #ffff;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 26px !important;
   }
 
   
   @media (min-width: 760px) {
     .banner h1 {
-      font-size: 52px;
+      font-size: 46px !important;
     }
 
   }
   
   @media (min-width: 1024px) {
     .banner h1 {
-      font-size: 62px;
+      font-size: 56px !important;
     }
   
   }

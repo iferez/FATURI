@@ -1,23 +1,14 @@
 @import "headerFooterMenu.css";
 
-.container-main {
-  width: 100%;
-  margin: auto;
-  background: #ffff;
+.portal h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffff;
 }
 
-.portal h1{
-    font-size: 32px;
-    font-weight: bold;
-    color: #ffff;
-  }
-
-  .portal h1 span{
-
-    font-weight:lighter;
-
-  }
-  
+.portal h1 span {
+  font-weight: lighter;
+}
 
 /*--*/
 

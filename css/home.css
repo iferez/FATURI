@@ -209,9 +209,6 @@ td {
   .indexImg img {
     width: 111px;
   }
-  h2 {
-    font-size: 5px !important;
-  }
 }
 
 @media (max-width: 996px) {

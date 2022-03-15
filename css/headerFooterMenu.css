@@ -280,11 +280,3 @@ nav ul li span.rotate {
   }
 }
 
-@media (min-width: 1199px) {
-  .banner h1 {
-    font-size: 4.25rem;
-  }
-}
-
-@media (min-width: 1400px) {
-}
