@@ -107,7 +107,7 @@ nav ul li {
   text-align: center;
   cursor: pointer;
   background-color: #ffff;
-  border-bottom: 1px solid #ffff(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ffff (0, 0, 0, 0.2);
 }
 nav ul li label {
   font-size: 18px;

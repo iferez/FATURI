@@ -37,106 +37,110 @@
             </div>
             <div class="col-4 col-sm-6 d-flex justify-content-center">
                 <nav>
-    
-              
+
+
                     <label for="btnCuenta" class="button miCuenta"> <i class="fas fa-user"></i>
-                         <div class="d-none d-lg-inline cuentaNombre">Joaquín Pérez</div> 
-                    <span class="fas fa-caret-down"></span>
+                        <div class="d-none d-lg-inline cuentaNombre">Joaquín Pérez</div>
+                        <span class="fas fa-caret-down"></span>
                     </label>
-           
+
                     <input type="checkbox" id="btnCuenta">
-           
+
                     <ul class="menu">
-                      <li class="borderInicio fw-bold" id="tipoUsuarioMenu"><a href="#">Usuario Aprobador</a></li>
-                       <li id="pendientesMenu"><a href="#"> Solicitudes pendientes</a></li>
-                       <li id="historialMenu"><a href="#">Historial</a></li>
-                      
-                       <li><hr></li>
-                       <li class="borderFin" id="cerrarMenu"><a href="#">Cerrar la sesión</a></li>
+                        <li class="borderInicio fw-bold" id="tipoUsuarioMenu"><a href="#">Usuario Aprobador</a></li>
+                        <li id="pendientesMenu"><a href="#"> Solicitudes pendientes</a></li>
+                        <li id="historialMenu"><a href="#">Historial</a></li>
+
+                        <li>
+                            <hr>
+                        </li>
+                        <li class="borderFin" id="cerrarMenu"><a href="#">Cerrar la sesión</a></li>
                     </ul>
-           
-                 </nav>
+
+                </nav>
             </div>
         </div>
-    
+
     </header>
 
 
-
-
     <main class="bg-cargaMasiva">
+
         <div class="container cargaMasiva">
 
-
-            <h2>Alta carga masiva de usuarios</h2>
-
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <h3>Cargar archivo</h3>
-                    <h4>Seleccioná y subí el archivo de carga masiva</h4>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="fw-bold fs-2 mt-lg-5">Alta carga masiva de usuarios</h2>
 
 
 
-                    <div class="col">
+                    <div class="row justify-content-center">
 
-                        <label for="file" class="form-label">Arrastrá o seleccioná el archivo</label>
-                        <div class="input-group inputFile">
-                            <input type="file" class="form-control" aria-label="file example" required>
-
-                            <span class="input-group-text rounded-end" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom" title="Eliminar" id="eliminarArchivo"><i
-                                    class="fas fa-trash-alt"></i> </span>
-
-                            <div class="invalid-feedback">Eror al cargar el archivo</div>
-
+                        <div class="col-8">
+                            <h3>Cargar archivo</h3>
+                            <h4>Seleccioná y subí el archivo de carga masiva</h4>
+                        </div>
+                        <div class="col-4">
+                                <div class="card text-center">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Ejemplo de carga masiva</h5>
+                                   <button class="btn btn-primary"> Descargar CSV </button>
+                                  </div>
+                                </div>
                         </div>
 
-                    </div>
+                        <div class="col-12">
+                            <div class="col">
+                                <label for="file" class="form-label">Arrastrá o seleccioná el archivo</label>
+                                <div class="input-group inputFile">
+                                    <input type="file" class="form-control" aria-label="file example" required>
+                                    <span class="input-group-text rounded-end" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Eliminar" id="eliminarArchivo"><i
+                                            id="iconDelete" class="fas fa-trash-alt"></i> </span>
 
-                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                            class="fas fa-question-circle pe-1"></i>Más información</a>
+                                </div>
+                            </div>
 
-                    <p class="errorP"><i class="fas fa-exclamation-triangle"></i> Una vez enviado el documento si hay
-                        algún error deberá eliminarlo y cargarlo nuevamente.</p>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#modalInfo"><i
+                                    class="fas fa-question-circle my-2 pe-1"></i>Más información</a>
 
-                    <div class="form-group item-form">
-                        <label for="fechaCarga">Fecha de carga</label>
-                        <input type="text" name="fechaCarga" class="form-control" id="fechaCarga" required=""
-                            aria-required="true" />
-                    </div>
+                            <p class="errorP"><i class="fas fa-exclamation-triangle"></i> Una vez enviado el documento
+                                si hay
+                                algún error deberá eliminarlo y cargarlo nuevamente.
 
+                            <div class="row botonesCarga py-3">
+                                <div class="col-md-6">
+                                    <button class="btn btn-info rounded-pill" onclick="">Ir al inicio</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn btn-success rounded-pill">Importar carga masiva</button>
+                                </div>
+                            </div>
 
-                    <div class="row botonesCarga py-5">
-                        <div class="col-xxl-4 d-xxl-flex">
-                            <button class="btn btn-info rounded-pill mb-4 mb-xxl-0">Ir al inicio</button>
                         </div>
-                        <div class="col-xxl-8 d-flex ">
-                            <button class="btn btn-success rounded-pill">Importar carga masiva</button>
-                        </div>
                     </div>
 
+
+                    <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Requerimientos</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Solamente permite subir archivos de extensión .CSV
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
             </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Requerimientos</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Solamente permite seleccionar <br class="d-md-none"> archivos de extensión .xls
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
 
         </div>
     </main>

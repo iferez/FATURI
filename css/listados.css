@@ -80,6 +80,11 @@ td {
   padding-bottom: 15px !important;
 }
 
+
+.saltolinea{
+  white-space: normal;
+}
+
 @media (min-width: 760px) {
   #collapseFiltro input {
     width: 230px;
