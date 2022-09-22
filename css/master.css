@@ -1,4 +1,6 @@
-@import "headerFooter.css";
+@import "ui-variables.css";
+@import "ui-header.css";
+
 @import "banner.css";
 @import "botones.css";
 @import "cargaMasiva.css";

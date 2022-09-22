@@ -16,8 +16,8 @@
 
 .info-terminos p {
   color: #333333 !important;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* OBSERVACIONES ENVIADAS */
@@ -25,7 +25,6 @@
 .container-ingresante {
   width: 100%;
   margin: auto;
-  background: #f5f5f5;
 }
 
 .info-observaciones h2 {
@@ -100,15 +99,12 @@
   }
   .info-terminos p {
     color: #0072bb;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
   }
 }
 
 @media (min-width: 760px) {
-  .container-ingresante {
-    height: 80vh;
-  }
   .info-observaciones h2 {
     font-size: 40px;
   }
@@ -127,9 +123,6 @@
 }
 
 @media (min-width: 1024px) {
-  .container-ingresante {
-    height: 75vh;
-  }
 
   .faturiDgtic {
     display: block;
@@ -142,7 +135,6 @@
 
   .fa-check-circle {
     font-size: 30px;
-    padding-right: 30px;
   }
   .modal-content {
     border-radius: 20px !important;

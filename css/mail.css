@@ -32,20 +32,19 @@
 
 /* RECHAZO */
 
-.exclamIcon{
-  color: #FFA834 !important;
+.exclamIcon {
+  color: #ffa834 !important;
   margin-right: 20px !important;
 }
 
-.mailEstado p{
+.mailEstado p {
   font-size: 18px;
 }
 
-.sitioNav{
-    font-size: 18px;
-    font-weight: bold;
+.sitioNav {
+  font-size: 18px;
+  font-weight: bold;
 }
-
 
 @media (min-width: 990px) {
   .mail {
@@ -55,5 +54,9 @@
   .btn-mailOk {
     font-size: 22px !important;
     padding: 15px 40px !important;
+  }
+
+  .exclamIcon {
+    font-size: 32px !important;
   }
 }
