@@ -124,6 +124,10 @@
 
 @media (min-width: 1024px) {
 
+  .info-terminos p {
+    font-size: 18px;
+  }
+
   .faturiDgtic {
     display: block;
     font-size: 32px;

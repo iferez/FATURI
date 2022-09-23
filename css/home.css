@@ -30,7 +30,7 @@
 }
 
 #img-ingreso {
-  width: 90px;
+  width: 70px;
 }
 
 .indexImg {
@@ -38,7 +38,7 @@
 }
 
 .indexImg img {
-  width: 80px;
+  width: 70px;
 }
 
 .info-registros h4 {
@@ -201,7 +201,11 @@ td {
 
 @media (min-width: 996px) {
   .indexImg img {
-    width: 111px;
+    width: 110px;
+  }
+
+  #img-ingreso {
+    width: 110px;
   }
 }
 

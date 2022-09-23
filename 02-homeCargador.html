@@ -24,7 +24,7 @@
     <div class="container">
         <div class="row">
             <div id="headerColUno" class="col-6 d-flex align-items-center">
-                <a href="#">
+              <a href="index.html">
                     <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
                 </a>
             </div>
@@ -34,39 +34,13 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li id="datosUsuarioMenu">
-                        <span>Navegar maquetación</span> <br>
+                        <a href="index.html"><span>Navegar maquetación</span></a> <br>
                     </li>
                     <li><a href="02-homeCargador.html">Home cargador</a></li>
                     <hr>
                     <li><a href="08-homeAprobador.html">Home aprobador</a></li>
                     <hr>
-                    <li><a href="03-formAlta.html">Formulario de alta</a></li>
-                    <hr>
-                    <li><a href="05-formEdit.html">Formulario de edición</a></li>
-                    <hr>
-                    <li><a href="04-mensajeConfirmado.html">Formulario Confirmación</a></li>
-                    <hr>
-                    <li><a href="11-cargaMasiva.html">Carga masiva</a></li>
-                    <hr>
-                    <li><a href="07-listaAprobados.html">Listado ingresantes</a></li>
-                    <hr>
-                    <li><a href="10-listadoAprobador.html">Listado de gestión</a></li>
-                    <hr>
-                    <li><a href="11-cargaMasiva.html">Listado carga masiva</a></li>
-                    <hr>
                     <li><a href="14-ingresante.html">Ingresante</a></li>
-                    <hr>
-                    <li><a href="15-formIngresante.html">Formulario Ingresante</a></li>
-                    <hr>
-                    <li><a href="17-terminos.html">Términos y condiciones</a></li>
-                    <hr>
-                    <li><a href="16-observacionesIngresante.html">Observaciones</a></li>
-                    <hr>
-                    <li><a href="18-terminosAceptados.html">Aceptación</a></li>
-                    <hr>
-                    <li><a href="19-mailAgradecimiento.html">Email Aceptación</a></li>
-                    <hr>
-                    <li><a href="21-bajaServicio.html">Email Baja</a></li>
                 </ul>
             </div>
         </div>
@@ -76,22 +50,6 @@
   <main>
     <div class="container-main bg-light">
       <section class="container bienvenida mb-5">
-
-        <!-- ALERTA CARGA EXITOSA -->
-        <div class="row justify-content-center visually-hidden">
-          <div class="col-8 mt-5">
-            <div class="alert alert-success border-success" role="alert">
-              <p class="fw-bold fs-4 my-0">
-                Alta nuevo Ingresante cargada con éxito
-              </p>
-
-              <p class="fs-4 my-0">
-                Podes continuar dando de alta otro ingresante.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- ALERTA FIN -->
 
         <div class="row">
           <div class="col-12">
@@ -118,7 +76,6 @@
               <div class="col-sm-1
                   d-none d-sm-block
                   bg-white
-                  
                   ps-4
                   pt-5
                   indexImg
@@ -156,8 +113,8 @@
                     </li>
                   </ul>
                 </div>
-                <button class="btn btn-success mx-sm-5 my-4 fw-bold shadow-sm">
-                  Generar nueva alta
+                <button class="btn mx-sm-5">
+                  <a href="03-formAlta.html" class="btn btn-success my-4 fw-bold shadow-sm">Generar nueva alta</a>
                 </button>
               </div>
 
@@ -165,7 +122,6 @@
               <div class="col-sm-1
               d-none d-sm-block
               bg-white
-              
               ps-4
               pt-5
               indexImg
@@ -203,16 +159,16 @@
                   </form>
                 </div>
 
-                <button class="btn btn-warning text-white mx-sm-5 mb-5 fw-bold shadow-sm">
-                  Cambiar de modalidad
+                <button class="btn btn-warning text-white mx-sm-3 mx-xxl-5 mb-5 fw-bold shadow-sm">
+                  <a href="05-formEdit.html" class="text-white">Cambiar de modalidad</a>
                 </button>
 
-                <button class="btn btn-warning text-white mx-sm-5 mb-5 fw-bold shadow-sm">
-                  Cambiar de dependencia
+                <button class="btn btn-warning text-white mx-sm-3 mx-xxl-5 mb-5 fw-bold shadow-sm">
+                  <a href="05-formEdit.html" class="text-white">Cambiar de dependencia</a>
                 </button>
 
-                <button class="btn btn-danger text-white mx-sm-5 mb-5 fw-bold shadow-sm">
-                  Dar de baja
+                <button class="btn btn-danger text-white mx-sm-3 mx-xxl-5 mb-5 fw-bold shadow-sm">
+                  <a href="05-formEdit.html" class="text-white">Dar de baja</a>
                 </button>
 
 
@@ -261,9 +217,9 @@
                 </td>
                 <td class="fw-bold d-none d-lg-table-cell">Nombre y apellido</td>
                 <td>27-32000000-8</td>
-                <td>32.000.000</td>
+              
                 <td>nombre@produccion.gob.ar</td>
-                <td>Dependencia</td>
+                
                 <td class="text-danger">Rechazada</td>
                 <td>17/05/2021</td>
                 <td> <a href=""><i class="fas fa-eye me-2 text-primary" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -279,9 +235,9 @@
                 </td>
                 <td class="fw-bold d-none d-lg-table-cell">Nombre y apellido</td>
                 <td>27-32000000-8</td>
-                <td>32.000.000</td>
+              
                 <td>nombre@produccion.gob.ar</td>
-                <td>Dependencia</td>
+                
                 <td class="text-warning">Observada</td>
                 <td>17/05/2021</td>
                 <td> <a href=""><i class="fas fa-eye me-2 text-primary" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -296,9 +252,9 @@
                 </td>
                 <td class="fw-bold d-none d-lg-table-cell">Nombre y apellido</td>
                 <td>27-32000000-8</td>
-                <td>32.000.000</td>
+              
                 <td>nombre@produccion.gob.ar</td>
-                <td>Dependencia</td>
+                
                 <td class="text-warning">Observada</td>
                 <td>17/05/2021</td>
                 <td> <a href=""><i class="fas fa-eye me-2 text-primary" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -314,7 +270,7 @@
 
 
           <h5 class="fw-bold mt-5 mb-0 pb-5">
-            Ver solicitudes aprobadas
+            <a href="07-listaAprobados.html" class="text-azul">Ver solicitudes aprobadas</a>
           </h5>
 
 

@@ -24,7 +24,7 @@
     <div class="container">
         <div class="row">
             <div id="headerColUno" class="col-6 d-flex align-items-center">
-                <a href="#">
+              <a href="index.html">
                     <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
                 </a>
             </div>
@@ -40,33 +40,7 @@
                     <hr>
                     <li><a href="08-homeAprobador.html">Home aprobador</a></li>
                     <hr>
-                    <li><a href="03-formAlta.html">Formulario de alta</a></li>
-                    <hr>
-                    <li><a href="05-formEdit.html">Formulario de edición</a></li>
-                    <hr>
-                    <li><a href="04-mensajeConfirmado.html">Formulario Confirmación</a></li>
-                    <hr>
-                    <li><a href="11-cargaMasiva.html">Carga masiva</a></li>
-                    <hr>
-                    <li><a href="07-listaAprobados.html">Listado ingresantes</a></li>
-                    <hr>
-                    <li><a href="10-listadoAprobador.html">Listado de gestión</a></li>
-                    <hr>
-                    <li><a href="11-cargaMasiva.html">Listado carga masiva</a></li>
-                    <hr>
                     <li><a href="14-ingresante.html">Ingresante</a></li>
-                    <hr>
-                    <li><a href="15-formIngresante.html">Formulario Ingresante</a></li>
-                    <hr>
-                    <li><a href="17-terminos.html">Términos y condiciones</a></li>
-                    <hr>
-                    <li><a href="16-observacionesIngresante.html">Observaciones</a></li>
-                    <hr>
-                    <li><a href="18-terminosAceptados.html">Aceptación</a></li>
-                    <hr>
-                    <li><a href="19-mailAgradecimiento.html">Email Aceptación</a></li>
-                    <hr>
-                    <li><a href="21-bajaServicio.html">Email Baja</a></li>
                 </ul>
             </div>
         </div>
@@ -77,38 +51,6 @@
   <main>
     <div class="container-main bg-light">
       <section class="container bienvenida">
-        <!-- ALERTA CARGA EXITOSA -->
-        <div class="row justify-content-center visually-hidden">
-          <div class="col-10 my-4">
-            <div class="alert alert-success border-success d-flex justify-content-between" role="alert">
-              <p>
-                <span class="fw-bold">
-                  La solicitud fue aprobada con éxito.</span>
-                <br />
-                Se ha enviado un correo al ingresante para la aprobación de
-                términos y condiciones.
-              </p>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-          </div>
-        </div>
-        <!-- ALERTA FIN -->
-
-        <!-- ALERTA CARGA RECHAZADA -->
-
-        <div class="row justify-content-center visually-hidden">
-          <div class="col-10 my-4">
-            <div class="alert alert-warning border-warning d-flex justify-content-between" role="alert">
-              <p>
-                <span class="fw-bold">La solicitud fue rechazada.</span>
-                <br />
-                La solicitud pasa a estado rechazada.
-              </p>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-          </div>
-        </div>
-        <!-- ALERTA FIN -->
 
         <h1>FATURI</h1>
         <h3>¡Hola Joaquín Pérez, bienvenido a DGTIC!</h3>
@@ -210,7 +152,7 @@
                     </li>
                   </ul>
                   <button class="btn btn-warning text-white my-5 fw-bold shadow-sm">
-                    Generar carga masiva
+                    <a href="11-cargaMasiva.html" class="text-white">Generar carga masiva</a>
                   </button>
                 </div>
               </div>
@@ -269,10 +211,6 @@
 
             <!-- TABLA -->
 
-            <h3 class="mb-4 fs-3 fw-bold p-3 p-md-0">
-              Listado de solicitudes de cambio de modalidad
-            </h3>
-
             <table class="table tablaRespStyle">
               <tbody class="bg-white">
                 <tr>
@@ -283,9 +221,7 @@
                     Nombre y apellido
                   </td>
                   <td>27-32000000-8</td>
-                  <td>32.000.000</td>
                   <td>nombre@produccion.gob.ar</td>
-                  <td>Dependencia</td>
                   <td>17/05/2021</td>
                   <td class="borde-right rounded-end">
                     <button class="btn btn-solicitud rounded-pill">
@@ -302,9 +238,7 @@
                     Nombre y apellido
                   </td>
                   <td>27-32000000-8</td>
-                  <td>32.000.000</td>
                   <td>nombre@produccion.gob.ar</td>
-                  <td>Dependencia</td>
                   <td>17/05/2021</td>
                   <td class="borde-right rounded-end">
                     <button class="btn btn-solicitud rounded-pill">
@@ -321,9 +255,7 @@
                     Nombre y apellido
                   </td>
                   <td>27-32000000-8</td>
-                  <td>32.000.000</td>
                   <td>nombre@produccion.gob.ar</td>
-                  <td>Dependencia</td>
                   <td>17/05/2021</td>
                   <td class="borde-right rounded-end">
                     <button class="btn btn-solicitud rounded-pill">
@@ -334,7 +266,9 @@
               </tbody>
             </table>
 
-            <h5 class="mt-5 mb-0 fw-bold pb-5">Ver solicitudes aprobadas</h5>
+            <h5 class="mt-5 mb-0 fw-bold pb-5">
+              <a href="10-listadoAprobador.html" class="text-azul">Ver solicitudes aprobadas</a>
+            </h5>
           </div>
         </div>
       </section>
