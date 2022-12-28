@@ -45,139 +45,69 @@
     </section>
 
     <div class="container formulariosCont py-5">
-      <form autocomplete="off">
 
-        <!-- DATOS PERSONALES -->
-        <fieldset disabled>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 ">
+          <h2 class="fw-bold mt-lg-5 mb-4">Formulario por cambio de gestión</h2>
+          <h3 class="mb-4 fw-bold fs-4">Datos del Agente</h3>
 
+          <form action="">
+            <fieldset disabled>
+              <div class="row">
+                <div class="col-6">
+                  <label class="form-label">Nombre/s</label>
+                  <input type="text" class="form-control" id="">
+                </div>
 
-          <div class="row d-flex justify-content-center">
-            <h2 class="fw-bold fs-2 mt-lg-5 mb-4 text-md-center">Completa el formulario cambio de dependencia</h2>
-            <div class="col-md-6">
-
-              <h3 class="my-4 fw-bold fs-4">Datos del Agente</h3>
-
-              <div class="form-group item-form">
-                <label for="nombre">Nombre/s</label>
-                <input type="text" name="nombreForm" class="form-control" id="nombre" required=""
-                  aria-required="true" />
-                <p class="help-block error visually-hidden" role="alert">
-                  Ingresá tu nombre
-                </p>
+                <div class="col-6">
+                  <label class="form-label">Apellido/s</label>
+                  <input type="text" class="form-control" id="">
+                </div>
               </div>
 
-              <div class="form-group item-form">
-                <label for="apellido">Apellido/s</label>
-                <input type="text" name="apellidoForm" class="form-control" id="apellido" required=""
-                  aria-required="true" />
-                <p class="help-block error visually-hidden">
-                  Ingresá tu apellido
-                </p>
-              </div>
+              <label class="form-label">CUIL / CUIT</label>
+              <input type="text" class="form-control" id="">
 
-              <div class="form-group item-form">
-                <label for="cuil-cuit">CUIL / CUIT</label>
-                <input type="text" name="cuilCuitForm" class="form-control" id="cuil-cuit" required=""
-                  aria-required="true" />
-                <p class="help-block error visually-hidden">
-                  La persona con el número de CUIL/CUIT ingresado ya existe en
-                  el Sistema. Por favor, verificar.
-                </p>
-              </div>
+              <label class="form-label">Rol</label>
+              <input type="text" class="form-control" id="">
 
-              <div class="form-group item-form">
-                <label for="rolForm">Rol</label>
-                <input type="text" name="rolForm" class="form-control" id="rolForm" required="" aria-required="true" />
-                <p class="help-block error visually-hidden">
-                  Ingresá un Rol
-                </p>
-              </div>
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="">
 
-              <div class="form-group item-form">
-                <label for="email">E-Mail</label>
-                <input type="email" name="emailForm" class="form-control" id="email" required="" aria-required="true" />
-                <p class="help-block error visually-hidden">
-                  Ingresá un correo electrónico <br />
-                  El correo electrónico tiene un formato no válido
-                </p>
-              </div>
-
-
-              <div class="form-group item-form">
-                <label for="dependenciaForm">Dependencia</label>
-                <select name="dependenciaForm" id="dependenciaForm" class="form-control">
-                  <option value="">Seleccione</option>
-                  <option value="1">xxxxx</option>
-                  <option value="2">xxxxxx</option>
-                  <option value="3">xxxxxxx</option>
-                  <option value="4">xxxxxxxx</option>
-                  <option value="5">xxxxx</option>
-                </select>
-                <p class="help-block error visually-hidden">
-                  Ingresá el una opción valida
-                </p>
-              </div>
-
-              <div class="form-group item-form">
-                <label for="modalidad">Modalidad de vinculación</label>
-                <select name="modalidadForm" id="modalidad" class="form-control">
-                  <option value="">Seleccione</option>
-                  <option value="1">Asistencia Técnica</option>
-                  <option value="2">Decreto 1109/07</option>
-                  <option value="3">Ley Marco (25.164)</option>
-                  <option value="4">Planta Permanente</option>
-                  <option value="5">Planta Transitoria</option>
-                </select>
-                <p class="help-block error visually-hidden">
-                  Ingresá el una opción valida
-                </p>
-              </div>
-
-        </fieldset>
-
-
-        <!-- NUEVA XXX -->
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-6">
-
-            <h3 class="mb-4 mt-5 fw-bold fs-4"> Datos de la nueva xxx</h3>
-
-            <div class="form-group item-form">
-              <label for="nuevaModalidad">xxx nueva</label>
-              <select name="nuevaModalidadForm" id="nuevaModalidad" class="form-control">
-                <option value="">Seleccione</option>
-                <option value="1">xxx</option>
+              <label class="form-label">Dependencia</label>
+              <select class="form-select">
+                <option selected>Seleccionar</option>
               </select>
-              <p class="help-block error visually-hidden">
-                Ingresá el una opción valida
-              </p>
-            </div>
 
-            <div class="form-group item-form">
-              <label for="fecha">Fecha de comienzo de nueva xxx</label>
-              <input type="date" class="form-control" id="fecha" required="" aria-required="true" />
-              <p class="help-block error visually-hidden">
-                Ingresá una fecha válida
-              </p>
-            </div>
+              <label class="form-label">Modalidad de vinculación</label>
+              <select class="form-select">
+                <option selected>Seleccionar</option>
+              </select>
+              <hr class="mt-5">
+            </fieldset>
 
-            <div class="row py-5">
-              <div class="col-sm-6">
-                <a href="02-homeCargador.html" class="btn btn-info my-3 my-sm-0 px-4 py-2 rounded-pill">Volver al inicio</a>
-              </div>
-              <div class="col-sm-6 d-flex justify-content-md-end">
-                <a href="04-mensajeConfirmado.html" class="btn btn-success m-l-1 ms-sm-5 px-4 py-2 rounded-pill">Enviar solicitud</a>
-              </div>
-            </div>
+            <h3 class="fw-bold">Datos de la nueva xxx</h3>
 
-          </div>
+            <label class="form-label">Nuevos datos</label>
+            <select class="form-select">
+              <option selected>Seleccionar</option>
+            </select>
+
+            <label class="form-label">Nueva fecha de comienzo</label>
+            <input type="date" class="form-control" id="">
+
+
+            <div class="text-end my-5">
+              <a href="02-homeCargador.html" class="btn btn-secondary rounded-pill">Volver</a>
+              <a href="04-mensajeConfirmado.html" class="btn btn-success rounded-pill ms-3">Confirmar</a>
+            </div>
+          </form>
+
         </div>
-
-
-      </form>
-    </div>
+      </div>
 
     </div>
+
   </main>
 
   <footer id="footer-ministerioDesarrollo">

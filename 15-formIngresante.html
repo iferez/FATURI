@@ -33,238 +33,124 @@
   </header>
 
 
-    <main class="main-bg">
+  <main class="main-bg">
+    <div class="container ingresanteCont py-3">
 
-      <div class="container ingresanteCont py-3">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 ">
+          <h2 class="fw-bold mt-lg-5 mb-4">Formulario de términos <br class="d-none d-md-block"> y condiciones</h2>
+          <h3 class="mb-4 fw-bold fs-4">Datos personales del ingresante</h3>
 
-        <form>
 
-             <!-- DATOS PERSONALES -->
-             <fieldset disabled>
-        
-        
-              <div class="row d-flex justify-content-center">
-                <div class="col-md-6 ">
-                  <h2 class="fw-bold fs-1 mt-lg-5 mb-5">Formulario de términos <br> y condiciones</h2>
-    
-                  <h3 class="mb-4 fw-bold fs-4">Datos personales del ingresante</h3>
-    
-    
-                  <div class="form-group item-form">
-                    <label for="nombre">Nombre/s</label>
-                    <input type="text" name="nombreForm" class="form-control" id="nombre" required=""
-                      aria-required="true" />
-                    <p class="help-block error visually-hidden" role="alert">
-                      Ingresá tu nombre
-                    </p>
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="apellido">Apellido/s</label>
-                    <input type="text" name="apellidoForm" class="form-control" id="apellido" required=""
-                      aria-required="true" />
-                    <p class="help-block error visually-hidden">
-                      Ingresá tu apellido
-                    </p>
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="cuil-cuit">CUIL / CUIT</label>
-                    <input type="text" name="cuilCuitForm" class="form-control" id="cuil-cuit" required=""
-                      aria-required="true" />
-                    <p class="help-block error visually-hidden">
-                      La persona con el número de CUIL/CUIT ingresado ya existe en
-                      el Sistema. Por favor, verificar.
-                    </p>
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="rolForm">Rol</label>
-                    <input type="text" name="rolForm" class="form-control" id="rolForm" required=""
-                      aria-required="true" />
-                    <p class="help-block error visually-hidden">
-                      Ingresá un Rol
-                    </p>
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="email">E-Mail</label>
-                    <input type="email" name="emailForm" class="form-control" id="email" required="" aria-required="true" />
-                    <p class="help-block error visually-hidden">
-                      Ingresá un correo electrónico <br />
-                      El correo electrónico tiene un formato no válido
-                    </p>
-                  </div>
-    
-    
-                  <div class="form-group item-form">
-                    <label for="dependenciaForm">Dependencia</label>
-                    <select name="dependenciaForm" id="dependenciaForm" class="form-control">
-                      <option value="">Seleccione</option>
-                      <option value="1">xxxxx</option>
-                      <option value="2">xxxxxx</option>
-                      <option value="3">xxxxxxx</option>
-                      <option value="4">xxxxxxxx</option>
-                      <option value="5">xxxxx</option>
-                    </select>
-                    <p class="help-block error visually-hidden">
-                      Ingresá el una opción valida
-                    </p>
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="modalidad">Modalidad de vinculación</label>
-                    <select name="modalidadForm" id="modalidad" class="form-control">
-                      <option value="">Seleccione</option>
-                      <option value="1">Asistencia Técnica</option>
-                      <option value="2">Decreto 1109/07</option>
-                      <option value="3">Ley Marco (25.164)</option>
-                      <option value="4">Planta Permanente</option>
-                      <option value="5">Planta Transitoria</option>
-                    </select>
-                    <p class="help-block error visually-hidden">
-                      Ingresá el una opción valida
-                    </p>
-                  </div>
-    
-    
-                  <h3 class="mb-4 mt-5 fw-bold fs-4">Ubicación</h3>
-    
-    
-                  <div class="form-group item-form">
-                    <label for="direccion">Dirección</label>
-                    <select name="direccionForm" id="direccion" class="form-control">
-                      <option value="">Seleccione</option>
-                      <option value="1">Av. Hipólito Yrigoyen 250</option>
-                      <option value="2">Av. Paseo Colón 171</option>
-                      <option value="3">Av. Paseo Colón 189</option>
-                      <option value="4">Av. Paseo Colón 275</option>
-                      <option value="5">Av. Presidente Julio A. Roca 651</option>
-                      <option value="6">Av. Presidente Roque Sáenz Peña 555</option>
-                      <option value="6">Balcarce 186</option>
-                      <option value="6">Otra5</option>
-                    </select>
-                    <p class="help-block error visually-hidden">
-                      Selecciona una opción valida
-                    </p>
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="otra">Otra</label>
-                    <input type="text" name="otraForm" class="form-control" id="otra" required="" aria-required="false" />
-                    <p class="help-block error visually-hidden">
-                      Selecciona una opción valida
-                    </p>
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="piso">Piso</label>
-                    <input type="text" name="pisoForm" class="form-control" id="piso" required="" aria-required="false" />
-                    <p class="help-block error visually-hidden">
-                      Selecciona una opción valida
-                    </p>
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="oficina">Oficina</label>
-                    <input type="text" name="oficinaForm" class="form-control" id="oficina" required=""
-                      aria-required="false" />
-                    <p class="help-block error visually-hidden">
-                      Selecciona una opción valida
-                    </p>
-    
-                  </div>
-    
-                  <div class="form-group item-form">
-                    <label for="interno">Interno</label>
-                    <input type="text" name="internoForm" class="form-control" id="interno" required=""
-                      aria-required="false" />
-                    <p class="help-block error visually-hidden">
-                      Selecciona una opción valida
-                    </p>
-                  </div>
-    
-    
+          <form action="">
+            <!-- DATOS PERSONALES -->
+            <fieldset disabled>
+              <div class="row">
+                <div class="col-6">
+                  <label class="form-label">Nombre/s</label>
+                  <input type="text" class="form-control" id="">
+                </div>
+
+                <div class="col-6">
+                  <label class="form-label">Apellido/s</label>
+                  <input type="text" class="form-control" id="">
                 </div>
               </div>
-    
-    
-             </fieldset>
-         
 
-            <div class="row d-flex justify-content-center mb-5">
-                <div class="col-md-6">
+              <label class="form-label">CUIL / CUIT</label>
+              <input type="text" class="form-control" id="">
 
-                
+              <label class="form-label">Rol</label>
+              <input type="text" class="form-control" id="">
 
-                  <div class="form-group item-form">
-                    <label for="opcion1-alt">¿Desea agregar observaciones?</label>
-                    <div class="d-flex">
-                      <div class="radio me-4">
-                        <label for="opcion1-alt">
-                          <input type="radio" name="opciones-alt" id="opcion1-alt" value="opcion1-alt" required=""
-                            aria-required="true" />
-                          Si
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label for="opcion2-alt">
-                          <input type="radio" name="opciones-alt" id="opcion2-alt" value="opcion2-alt" required=""
-                            aria-required="true" />
-                          No
-                        </label>
-                      </div>
-                      <p class="help-block error visually-hidden">
-                        Selecciona una opción
-                      </p>
-                    </div>
-                  </div>
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="">
 
-                  <div class="form-group item-form">
-                    <label for="observacionesTextarea">Observaciones</label>
-                    <textarea class="form-control" id="observaciones" rows="3"></textarea>
-                  </div>
+              <label class="form-label">Dependencia</label>
+              <input type="text" class="form-control" id="">
 
+              <label class="form-label">Modalidad de vinculación</label>
+              <input type="text" class="form-control" id="">
 
-                  <div class="row py-5">
+              <h3 class="fw-bold mt-5 mb-0">Ubicación</h3>
 
-                    <div class="col-sm-6">
-                      <a href="14-ingresante.html" class="btn btn-secondary my-3 my-sm-0 px-4 py-2 rounded-pill">Cancelar</a>
-                    </div>
+              <label class="form-label">Dirección</label>
+              <select class="form-select">
+                <option selected>Seleccionar</option>
+              </select>
 
-                    <!-- LOGICA ENVIAR CON O SIN OBSERVACIONES -->
+              <label class="form-label">Otra dirección</label>
+              <input type="text" class="form-control" id="">
 
-                    <div class="col-sm-6 d-flex justify-content-md-end" id="btn-submit">
-                      <a href="17-terminos.html" class="btn btn-success m-l-1 ms-sm-5 px-4 py-2 rounded-pill">Confirmar solicitud</a>
-                    </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="form-label">Piso</label>
+                  <input type="text" class="form-control" id="">
+                </div>
 
-                     <!--- FIN BTN  -->
+                <div class="col-md-4">
+                  <label class="form-label">Oficina</label>
+                  <input type="text" class="form-control" id="">
+                </div>
 
-                  </div>
-
+                <div class="col-md-4">
+                  <label class="form-label">Interno</label>
+                  <input type="text" class="form-control" id="">
                 </div>
               </div>
-         
-        </form>
-      </div>
-      
-    </main>
 
-    <footer id="footer-ministerioDesarrollo">
-      <div class="container">
-        <div class="row">
-          <div id="footerColUno" class="col-12 d-flex align-items-center">
-            <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
-          </div>
+            </fieldset>
+
+            <hr class="my-4">
+
+            <label class="form-label">¿Desea agregar observaciones?</label>
+            <article class="d-flex">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="observ" id="si">
+                <label class="form-check-label" for="si">
+                  Si
+                </label>
+              </div>
+              <div class="form-check ms-5">
+                <input class="form-check-input" type="radio" name="observ" id="no" checked>
+                <label class="form-check-label" for="no">
+                  No
+                </label>
+              </div>
+            </article>
+
+            <label class="form-label">Observaciones</label>
+            <textarea class="form-control-area" id="" rows="3"></textarea>
+
+            <div class="text-end my-5">
+              <a href="14-ingresante.html" class="btn btn-secondary rounded-pill">Volver</a>
+              <a href="17-terminos.html" class="btn btn-success rounded-pill ms-3">Confirmar</a>
+            </div>
+
+          </form>
+
         </div>
       </div>
-    </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+    </div>
+  </main>
+
+  <footer id="footer-ministerioDesarrollo">
+    <div class="container">
+      <div class="row">
+        <div id="footerColUno" class="col-12 d-flex align-items-center">
+          <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
